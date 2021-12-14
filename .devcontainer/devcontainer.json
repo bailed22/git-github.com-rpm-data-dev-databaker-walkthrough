@@ -1,0 +1,29 @@
+{
+    "name": "gssutils",
+    "image": "gsscogs/databaker:latest",
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "stardog-union.stardog-rdf-grammars",
+        "grapecity.gc-excelviewer",
+        "ms-python.python",
+        "danwhitfield.sparql-executor",
+        "ms-toolsai.jupyter",
+        "eamodio.gitlens"
+    ],
+    "settings": {
+        "sparql-executor.endpoints": [
+            {
+                "protocol": "https",
+                "host": "staging.gss-data.org.uk",
+                "path": "/sparql",
+                "name": "pmd",
+                "authentication": {
+                    "type": "basic",
+                    "username": "",
+                    "password": ""
+                },
+                "output": "table"
+            }
+        ]
+    }
+}
